@@ -10,7 +10,7 @@ function FormInput({ name, label, type, value, onChange }) {
                     >
                         {label}
                     </label>
-                  
+
                     <input
                         type={type}
                         id={name}

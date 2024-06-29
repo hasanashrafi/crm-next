@@ -16,7 +16,7 @@ function ItemList({ form, setForm }) {
     const changeHandler = () => {
 
     }
-    const deleteHandler = ()=>{
+    const deleteHandler = () => {
 
     }
     return (
@@ -51,7 +51,7 @@ function ItemList({ form, setForm }) {
                         </div>
                     </div>
                     <button
-                    onClick={deleteHandler}
+                        onClick={deleteHandler}
                         className="flex mx-auto place-content-center items-center mt-6 px-4 py-2 bg-red-500 hover:bg-red-700 text-white text-sm font-medium rounded-md"
                     >
                         Remove
