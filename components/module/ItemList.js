@@ -23,7 +23,7 @@ function ItemList({ form, setForm }) {
         <div className="w-full  min-h-screen shadow-2xl px-3 my-4 py-10  m-2  rounded " >
             <p>Purchased Products</p>
             {products.map(product => (
-                <div className=" rounded border border-gray-300  m-3 py-10 px-4  ">
+                <div key={product.id} className=" rounded border border-gray-300  m-3 py-10 px-4  ">
                     <FormInput
                         name="name"
                         label="product name"
