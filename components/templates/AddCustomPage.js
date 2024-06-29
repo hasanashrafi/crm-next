@@ -40,7 +40,7 @@ function AddCustomPage() {
             date: "",
             products: []
         })
-        router.push()
+        router.push("/")
     }
 
     return (
