@@ -20,20 +20,23 @@ function ItemList({ form, setForm }) {
 
     }
     return (
-        <div className="w-full  min-h-screen shadow-2xl px-3 my-4 py-10  m-2  rounded " >
-            <p>Purchased Products</p>
+        <div className=" w-full  min-h-screen shadow-2xl  my-4 p-6  m-2  rounded-lg " >
+            <p className="font-semibold font-mono text-lg text-center">Purchased Products</p>
             {products.map(product => (
-                <div key={product.id} className=" rounded border border-gray-300  m-3 py-10 px-4  ">
-                    <FormInput
-                        name="name"
-                        label="product name"
-                        type="text"
-                        value={product.name}
-                        onChange={changeHandler}
+                <div key={product.id} 
+                className="mx-auto w-full rounded-md border border-gray-300  m-3 py-10   ">
+                        <FormInput
+                            name="name"
+                            label="product name"
+                            type="text"
+                            value={product.name}
+                            onChange={changeHandler}
 
-                    />
-                    <div className="flex justify-between">
-                        <div className="w-1/2">
+                        />
+                    
+
+                    <div className="flex sm:w-full lg:inline-block place-items-center justify-between sm:justify-around ">
+                        <div className=" w-1/2 lg:w-full  m-1 ">
                             <FormInput
                                 name="price"
                                 label="Price"
@@ -41,7 +44,7 @@ function ItemList({ form, setForm }) {
                                 value={product.price}
                                 onChange={changeHandler} />
                         </div>
-                        <div className="w-1/2">
+                        <div className=" w-1/2 lg:w-full  m-1">
                             <FormInput
                                 name="qty"
                                 label="QTY"
