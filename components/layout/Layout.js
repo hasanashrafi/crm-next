@@ -9,7 +9,7 @@ function Layout({ children }) {
                 <Link href='/add-customer'
                     className=' p-1.5 rounded-md bg-white text-blue-700 text-sm hover:text-white hover:bg-opacity-20 transition-all'>Add Customer</Link>
             </header>
-            <div className='lg:h-screen sm:max-w-[1200px] mx-auto content-center'>
+            <div className='xl:h-full lg:h-screen sm:max-w-[1200px] mx-auto content-center'>
                 {children}
             </div>
 
