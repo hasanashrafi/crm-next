@@ -1,8 +1,8 @@
 
 function FormInput({ name, label, type, value, onChange }) {
     return (
-        <div>
-            <div className="w-full lg:w-full px-4">
+        <div className="">
+            <div className="w-full  lg:w-full px-4">
                 <div className=" w-full p-2 mb-3">
                     <label
                         className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
