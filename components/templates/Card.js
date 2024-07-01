@@ -6,7 +6,8 @@ function Card({ customer }) {
 
     }
     return (
-        <div className="w-full max-w-3xl m-2 p-2 mx-auto bg-white shadow-lg rounded-sm border border-gray-200">
+       <div className='max-w-2xl p-2'>
+         <div className=" w-full max-w-2xl m-2  mx-auto bg-white shadow-lg rounded-sm border border-gray-200">
             <header className="px-5 py-4 border-b border-gray-100">
                 <div className='flex  justify-between items-center w-full '>
                     <h2 className="font-semibold text-gray-800">Customer</h2>
@@ -77,6 +78,8 @@ function Card({ customer }) {
             </div>
 
         </div>
+       </div>
+
     )
 }
 
