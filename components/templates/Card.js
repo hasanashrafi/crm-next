@@ -2,16 +2,32 @@ import Link from 'next/link'
 import React from 'react'
 
 function Card({ customer }) {
-    const deleteHandler = ()=>{
+    const deleteHandler = () => {
 
     }
     return (
         <div className="w-full max-w-3xl m-2 mx-auto bg-white shadow-lg rounded-sm border border-gray-200">
             <header className="px-5 py-4 border-b border-gray-100">
-                <h2 className="font-semibold text-gray-800">Customer</h2>
+                <div className='flex  justify-between items-center w-full '>
+                    <h2 className="font-semibold text-gray-800">Customer</h2>
+                    <div className='flex'>
+                     <button onClick={deleteHandler}
+                        className="w-10 sm:w-16 h-fit py-1.5 px-6 flex mx-1 place-content-center items-center  bg-red-500 hover:bg-red-700 text-white text-sm font-medium rounded-md"
+                    >Delete
+
+                    </button>
+                        <Link href={`/edit/${customer._id}`}
+                            className="w-10 sm:w-16 h-fit py-1.5 px-6 flex mx-1  place-content-center items-center  bg-yellow-500 hover:bg-yellow-600 text-white text-sm font-medium rounded-md"
+                        >Edit
+                        </Link>
+                        <Link href={`/customer/${customer._id}`}
+                            className="w-10 sm:w-16 h-fit  py-1.5 px-6 flex mx-1 place-content-center items-center  bg-blue-500 hover:bg-blue-700 text-white text-sm font-medium rounded-md"
+                        >Details
+                        </Link></div>
+                </div>
             </header>
             <div className=" flex place-content-center items-center  justify-between p-3">
-                <div className="flex w-fit overflow-x-auto">
+                <div className="flex w-full overflow-x-auto">
                     <table className="table-auto w-full">
                         <thead className="text-xs font-semibold uppercase text-gray-400 bg-gray-50">
                             <tr>
@@ -58,22 +74,8 @@ function Card({ customer }) {
                         </tbody>
                     </table>
                 </div>
-                <div className='flex items-center w-fit '>
-                    <button onClick={deleteHandler}
-                        className="w-16 h-fit py-1.5 px-0 flex mx-1 place-content-center items-center  bg-red-500 hover:bg-red-700 text-white text-sm font-medium rounded-md"
-                    >Delete
-
-                    </button>
-                    <Link href={`/edit/${customer._id}`}
-                        className="w-16 h-fit py-1.5 px-0 flex mx-1  place-content-center items-center  bg-yellow-500 hover:bg-yellow-600 text-white text-sm font-medium rounded-md"
-                    >Edit
-                    </Link>
-                    <Link href={`/customer/${customer._id}`}
-                        className="w-16 h-fit  py-1.5 px-0 flex mx-1 place-content-center items-center  bg-blue-500 hover:bg-blue-700 text-white text-sm font-medium rounded-md"
-                    >Details
-                    </Link>
-                </div>
             </div>
+
         </div>
     )
 }
