@@ -1,9 +1,16 @@
+import CustomerDetail from './CustomerDetail';
 
-
-import ItemList from './ItemList'
 
 function Form({ form, setForm }) {
-    return <ItemList form={form} setForm={setForm} />
+
+
+    const changeHandler = (e) => {
+        const { name, value } = e.target;
+        setForm({ ...form, [name]: value })
+    }
+
+    return <CustomerDetail form={form} setForm={setForm} changeHandler={(e) => changeHandler(e)} />
+
 
 
 }
