@@ -41,7 +41,7 @@ function CustomerDetailsPage({ data }) {
                 <h4 className='font-mono text-lg font-semibold p-2 m-2'>
                     Customers Details
                 </h4>
-                <div className=' flex flex-wrap my-2 mx-auto p-4 justify-center rounded-lg bg-slate-700 text-white '>
+                <div className=' flex flex-wrap my-2 mx-auto p-4 justify-start sm:justify-center rounded-lg bg-slate-700 text-white '>
 
                     <div className=' flex'>
                         <span className='text-center  p-2  rounded text-lg text-cyan-400 font-semibold'>
@@ -126,11 +126,11 @@ function CustomerDetailsPage({ data }) {
                     </div>
                     <div className='flex place-content-start my-10'>
                         <button onClick={deleteHandler}
-                            className="w-20 sm:w-18  h-fit py-1.5  flex mx-1 place-content-center items-center  bg-red-500 hover:bg-red-700 text-white   rounded-md"
+                            className="w-1/2 sm:w-20  h-fit py-1.5  flex mx-1 place-content-center items-center  bg-red-500 hover:bg-red-700 text-white   rounded-md"
                         >Delete
                         </button>
                         <Link href={`/edit/${data._id}`}
-                            className="w-20 sm:w-18  h-fit py-1.5  flex mx-1  place-content-center items-center  bg-yellow-500 hover:bg-yellow-600 text-white  rounded-md"
+                            className="w-1/2 sm:w-20  h-fit py-1.5  flex mx-1  place-content-center items-center  bg-yellow-500 hover:bg-yellow-600 text-white  rounded-md"
                         >Edit
                         </Link>
 
