@@ -1,4 +1,3 @@
-
 function FormInput({ name, label, type, value, onChange }) {
     return (
         <div className="">
