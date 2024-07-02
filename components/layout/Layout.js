@@ -5,11 +5,13 @@ function Layout({ children }) {
     return (
         <>
             <header className='w-full sm:max-w-[1200px] mx-auto h-[52px] p-3 rounded-b-md  content-center place-items-center bg-blue-700 flex justify-between'>
-                <h2 className='text-white font-semibold text-xl font-mono'>CRM-Next Js</h2>
+                <Link href="/" className='text-white font-semibold text-xl font-mono'>CRM-Next Js</Link>
                 <Link href='/add-customer'
-                    className=' p-1.5 rounded-md bg-white text-blue-700 text-sm hover:text-white hover:bg-opacity-20 transition-all'>Add Customer</Link>
+                    className=' p-1.5 rounded-md bg-white text-blue-700 text-sm hover:text-white hover:bg-opacity-20 transition-all'>
+                    Add Customer
+                </Link>
             </header>
-            <div className='xl:h-full lg:h-screen sm:max-w-[1200px] mx-auto content-center'>
+            <div className='min-h-screen sm:min-h-screen xl:h-full lg:h-screen sm:max-w-[1200px] mx-auto content-center'>
                 {children}
             </div>
 
