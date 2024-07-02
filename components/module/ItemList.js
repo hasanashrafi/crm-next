@@ -31,7 +31,7 @@ function ItemList({ form, setForm }) {
     return (
         <div className=" w-full h-full  shadow-2xl  my-4 p-6  m-2  rounded-lg " >
             <p className="font-semibold font-mono text-lg text-center">Purchased Products</p>
-            {products.map((product, index) => (
+            {products &&  products.map((product, index) => (
                 <div key={index}
                     className="mx-auto w-full rounded-md border border-gray-300  m-3 py-10   ">
                     <FormInput
