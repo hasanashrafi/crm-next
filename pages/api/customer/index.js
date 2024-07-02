@@ -5,7 +5,6 @@ export default async function handler(req, res) {
 
     try {
         await connectDb()
-        // res.status(201).json({ status: "success", })
     } catch (error) {
         console.log(error);
         res.status(500).json({
