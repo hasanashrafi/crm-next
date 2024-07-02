@@ -39,7 +39,7 @@ function CustomerDetailsPage({ data }) {
                 
             </div>
                 <h4 className='font-mono text-lg font-semibold p-2 m-2'>
-                    Customer's Details
+                    Customers Details
                 </h4>
                 <div className=' flex flex-wrap my-2 mx-auto p-4 justify-center rounded-lg bg-slate-700 text-white '>
 
