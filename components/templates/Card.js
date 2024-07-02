@@ -19,7 +19,21 @@ function Card({ customer }) {
                 <header className=" px-6 py-6 border-b border-gray-100">
                     <div className='flex  justify-between items-center w-full '>
                         <h2 className="font-semibold text-gray-800">Customer</h2>
+                        <div className='flex place-content-end items-center'>
+                                            <button onClick={deleteHandler}
+                                                className="w-14 sm:w-12  h-fit  p-1  text-center mx-0.5 items-center  bg-red-500 hover:bg-red-700 text-white text-sm font-light rounded-md"
+                                            >Delete
 
+                                            </button>
+                                            <Link href={`/edit/${customer._id}`}
+                                                className="w-14 sm:w-12  h-fit  p-1  text-center mx-0.5  items-center  bg-yellow-500 hover:bg-yellow-600 text-white text-sm font-light rounded-md"
+                                            >Edit
+                                            </Link>
+                                            <Link href={`/customer/${customer._id}`}
+                                                className="w-14 sm:w-12 h-fit  p-1 text-center  mx-0.5  items-center  bg-blue-500 hover:bg-blue-700 text-white text-sm font-light rounded-md"
+                                            >Details
+                                            </Link>
+                                        </div>
                     </div>
                 </header>
                 <div className="w-full flex place-content-center items-center  justify-between p-3">
@@ -67,23 +81,7 @@ function Card({ customer }) {
                                             {customer.email}
                                         </div>
                                     </td>
-                                    <td className='p-2 whitespace-nowrap  '>
-                                        <div className='flex place-content-end'>
-                                            <button onClick={deleteHandler}
-                                                className="w-10 sm:w-12  h-fit py-1.5  flex mx-1 place-content-center items-center  bg-red-500 hover:bg-red-700 text-white text-sm font-light rounded-md"
-                                            >Delete
-
-                                            </button>
-                                            <Link href={`/edit/${customer._id}`}
-                                                className="w-10 sm:w-12  h-fit py-1.5  flex mx-1  place-content-center items-center  bg-yellow-500 hover:bg-yellow-600 text-white text-sm font-light rounded-md"
-                                            >Edit
-                                            </Link>
-                                            <Link href={`/customer/${customer._id}`}
-                                                className="w-10 sm:w-12 h-fit  py-1.5  flex mx-1 place-content-center items-center  bg-blue-500 hover:bg-blue-700 text-white text-sm font-light rounded-md"
-                                            >Details
-                                            </Link>
-                                        </div>
-                                    </td>
+                                    
                                 </tr>
                             </tbody>
                         </table>

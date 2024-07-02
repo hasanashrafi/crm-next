@@ -11,7 +11,7 @@ function Layout({ children }) {
                     Add Customer
                 </Link>
             </header>
-            <div className='min-h-screen sm:min-h-screen xl:h-full lg:h-screen sm:max-w-[1200px] mx-auto content-center'>
+            <div className='min-h-screen sm:min-h-screen lg:min-h-screen xl:min-h-screen   sm:max-w-[1200px] mx-auto content-center'>
                 {children}
             </div>
 
