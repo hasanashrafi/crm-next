@@ -3,6 +3,7 @@ import Customer from "@/models/Customer";
 import connectDb from "@/utils/connectDB";
 
 export default function Home({ customers }) {
+  
   return (
     <main className={`flex min-h-screen  items-center  `} >
       <HomePage customers={customers} />
