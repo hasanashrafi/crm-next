@@ -5,7 +5,7 @@ import moment from 'moment';
 
 function CustomerEditPage({ data, id }) {
     const date = data.date ? moment(data.date).utc().format("YYYY-MM-DD") : ""
-console.log(data);
+
     const [form, setForm] = useState({
 
         name: data.name,
@@ -28,7 +28,7 @@ console.log(data);
             headers: { "Content-type": "application/json" }
         })
         const data = await res.json()
-        console.log(data);
+        
 
         if (data.status === "success") router.push("/")
     }
